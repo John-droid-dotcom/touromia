@@ -1,7 +1,8 @@
 "use strict";
 var parent = document.querySelector(".btn");
 parent.addEventListener("mouseover", function() {
-    parent.children[0].style.backgroundColor = "white";
+    document.selectElelementByClass("icon-img").style.filter =
+        "invert(100%) sepia(0%) saturate(2%) hue-rotate(212deg) brightness(104%) contrast(101%);";
 });
 parent.addEventListener("mouseout", function() {
     parent.children[0].style.filter =
