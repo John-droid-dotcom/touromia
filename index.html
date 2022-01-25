@@ -1,45 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Touromia</title>
-    <script type="text/javascript" src="main.js"></script>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <img src="resources/logo.svg" alt="Touromia logo" id="logo" />
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Tour</a>
-            <a href="">Hotels</a>
-            <a href="">Contact</a>
-            <a href="" class="rounded-btn">Sign Up</a>
-        </nav>
-        <h1 class="headline">
-            Explore,
-            <span style="color: var(--red); font-family: 'Agenor'">Dream, </span
-        ><span style="color: #fff; font-family: 'Agenor'">Discover</span>
-        </h1>
-        <p class="subtitle">
-            Find great places to stay, eat, shop or visit from local experts.
-        </p>
-        <form action="">
-            <input type="text" placeholder="Ex. Food, Hotel, Place" />
-            <input type="submit" value="Search" />
-        </form>
-        <p class="subtitle">Or browse the highlights</p>
-        <div class="btns">
-            <a href="" class="btn"><img src="resources/svgs/accessibility-outline.svg" class="icon-img" />Tour Guides</a>
-            <a href="" class="btn"><img src="resources/svgs/bed-outline.svg" class="icon-img" />Hotel</a>
-            <a href="" class="btn"><img src="resources/svgs/airplane-outline.svg" class="icon-img" />Destinations</a>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav-bar">
+          <nav>
+            <div class="logo">
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 258.87 69.67"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      font-size: 42px;
+                      fill: #231f20;
+                      font-family: Agenor-Bold, Agenor;
+                      font-weight: 700;
+                    }
+                    .cls-2 {
+                      letter-spacing: -0.02em;
+                    }
+                    .cls-3 {
+                      letter-spacing: 0em;
+                    }
+                    .cls-4,
+                    .cls-5 {
+                      fill: #be1e2d;
+                    }
+                    .cls-4 {
+                      font-family: Agenor-Regular, Agenor;
+                      font-weight: 400;
+                    }
+                  </style>
+                </defs>
+                <text class="cls-1" transform="translate(0 50.17)">
+                  <tspan class="cls-2">T</tspan>
+                  <tspan class="cls-3" x="25.83" y="0">OUR</tspan>
+                  <tspan class="cls-4" x="126.17" y="0">om a</tspan>
+                </text>
+                <path
+                  class="cls-5"
+                  d="M640.5,1192.37c-.14-.63-.37-1.25-.53-1.87-.41-1.54-1.1-3.11-.66-4.63.1-.66.34-1.3.47-2-2.2-1-5.23-1-7.73-.75-.48.43,0,.92.13,1.39a14.92,14.92,0,0,1-.21,2.31,3.81,3.81,0,0,1-.61,1.92c-.17.38-.51,1.14-.69,1.52.38,1.48-2.22,1.46-2.81,2.53.09.4.23.79.36,1.19a3.08,3.08,0,0,1,1.35,1.49,33.89,33.89,0,0,0,3.15,1.26c-.11,12.4-1.06,24.76-1.56,37.13,0,1.06,0,2.11,0,3.17-.75,4.93-.09,10-1.48,14.88l2.51.55.82.18H633a2.64,2.64,0,0,0,2.51-2.27h0c0-.24,0-.48.05-.72.09-1.7.13-3.4.1-5.11,0-3.7.64-7.36.61-11.06.63-12.12.73-24.36,2-36.58-.09-.6.88-.24,1.46-.24.76-.74,2.55-.68,2.71-1.73C644,1193.7,642,1193,640.5,1192.37Zm-4.84-4.62c-.54-.52-.54-1.73.79-1.39-.56-.32-1.38-1-.23-1.12.79.37.63,1.37.56,2-1.09.84.41,2-.53,2.94C634.06,1189.92,635.22,1188.46,635.66,1187.75Zm-.9,4c.21-.39,1.16,0,1.69,0l1,.11C636.84,1192.24,635.6,1191.89,634.76,1191.71Z"
+                  transform="translate(-428.88 -1183.01)"
+                />
+              </svg>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Hotels</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+              <button type="button" class="sign-up-btn transition">
+                Sign Up
+              </button>
+            </div>
+          </nav>
         </div>
-    </header>
-</body>
-
+        <div class="head-content">
+          <h1 class="headline">
+            Explore,
+            <span class="primary-clr">Dream, </span
+            ><span class="text-white">Discover</span>
+          </h1>
+          <div>
+            <p class="subtitle">
+              Find great places to stay, eat, shop or visit from local experts.
+            </p>
+            <form action="">
+              <input
+                type="text"
+                class="text-input"
+                placeholder="Ex. Food, Hotel, Place"
+              />
+              <input type="submit" value="Search" class="transition" />
+            </form>
+            <p class="subtitle">Or browse the highlights</p>
+            <div class="btns">
+              <a href="" class="btn transition"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Accessibility</title>
+                  <circle
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    cx="256"
+                    cy="56"
+                    r="40"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M204.23 274.44c2.9-18.06 4.2-35.52-.5-47.59-4-10.38-12.7-16.19-23.2-20.15L88 176.76c-12-4-23.21-10.7-24-23.94-1-17 14-28 29-24 0 0 88 31.14 163 31.14s162-31 162-31c18-5 30 9 30 23.79 0 14.21-11 19.21-24 23.94l-88 31.91c-8 3-21 9-26 18.18-6 10.75-5 29.53-2.1 47.59l5.9 29.63 37.41 163.9c2.8 13.15-6.3 25.44-19.4 27.74S308 489 304.12 476.28l-37.56-115.93q-2.71-8.34-4.8-16.87L256 320l-5.3 21.65q-2.52 10.35-5.8 20.48L208 476.18c-4 12.85-14.5 21.75-27.6 19.46s-22.4-15.59-19.46-27.74l37.39-163.83z"
+                  /></svg
+                >Tour Guides</a
+              >
+              <a href="" class="btn transition"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-img"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Bed</title>
+                  <path
+                    d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  /></svg
+                >Hotel</a
+              >
+              <a href="" class="btn transition"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-img"
+                  viewBox="0 0 512 512"
+                >
+                  <title>Airplane</title>
+                  <path
+                    d="M407.72 224c-3.4 0-14.79.1-18 .3l-64.9 1.7a1.83 1.83 0 01-1.69-.9L193.55 67.56a9 9 0 00-6.66-3.56H160l73 161a2.35 2.35 0 01-2.26 3.35l-121.69 1.8a8.06 8.06 0 01-6.6-3.1l-37-45c-3-3.9-8.62-6-13.51-6H33.08c-1.29 0-1.1 1.21-.75 2.43l19.84 71.42a16.3 16.3 0 010 11.9L32.31 333c-.59 1.95-.52 3 1.77 3H52c8.14 0 9.25-1.06 13.41-6.3l37.7-45.7a8.19 8.19 0 016.6-3.1l120.68 2.7a2.7 2.7 0 012.43 3.74L160 448h26.64a9 9 0 006.65-3.55L323.14 287c.39-.6 2-.9 2.69-.9l63.9 1.7c3.3.2 14.59.3 18 .3C452 288.1 480 275.93 480 256s-27.88-32-72.28-32z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  /></svg
+                >Destinations</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>
