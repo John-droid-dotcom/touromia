@@ -1,0 +1,147 @@
+/*                  Root Properties                       */
+
+:root {
+    --red: #BE1E2D;
+    --black: #231F20;
+    --light: : #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: 1px solid var(--red);
+}
+
+
+/* Set Font */
+
+@font-face {
+    font-family: 'Agenor';
+    src: url("resources/Agenor-Regular.ttf");
+    font-family: 'Montserrat';
+    src: url("resources/Montserrat-Regular.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    background: url("resources/bg_alt5.jpg") no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: fixed;
+    padding-top: 3rem;
+}
+
+#logo {
+    width: 12rem;
+    margin-right: 40rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+a:hover {
+    color: var(--red);
+}
+
+.rounded-btn {
+    padding: 0.6rem 1.7rem;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+}
+
+.rounded-btn:hover {
+    color: #fff;
+    background-color: var(--red);
+    border: var(--border);
+}
+
+.headline {
+    font-family: 'Agenor';
+    font-size: 3.2rem;
+    color: var(--black);
+    margin-bottom: 1.2rem;
+    margin-top: 11rem;
+}
+
+.subtitle {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+form {
+    margin-bottom: 1.2rem;
+}
+
+input[type="text"] {
+    margin: 0;
+    height: 2.8rem;
+    width: 29rem;
+    border: 1px solid rgb(238, 238, 238);
+    text-align: left;
+    padding-left: 0.2rem;
+}
+
+input[type="submit"] {
+    margin: 0;
+    height: 2.8rem;
+    width: 12rem;
+    background-color: var(--red);
+    color: #fff;
+    border: none;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    color: var(--black);
+    background-color: #fff;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--red);
+}
+
+.btns>a>img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(20%) sepia(29%) saturate(7498%) hue-rotate(340deg) brightness(88%) contrast(97%);
+}
+
+
+/*
+.btns>a>img {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(212deg) brightness(104%) contrast(101%);
+}
+*/
