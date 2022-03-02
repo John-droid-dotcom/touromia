@@ -1,10 +1,11 @@
-"use strict";
-// var parent = document.querySelector(".btn");
-// parent.addEventListener("mouseover", function () {
-//   document.getElelementByClass("icon-img").style.filter =
-//     "invert(100%) sepia(0%) saturate(2%) hue-rotate(212deg) brightness(104%) contrast(101%);";
-// });
-// parent.addEventListener("mouseout", function () {
-//   parent.children[0].style.filter =
-//     "invert(20%) sepia(29%) saturate(7498%) hue-rotate(340deg) brightness(88%) contrast(97%)";
-// });
+var myNav = document.querySelector("fix-nav");
+window.onscroll = function() {
+    "use strict";
+    if (document.body.scrollTop >= 200) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
