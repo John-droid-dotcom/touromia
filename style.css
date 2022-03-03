@@ -46,6 +46,10 @@
     color: var(--light);
 }
 
+.text-black {
+    color: var(--black);
+}
+
 .alternate-bg {
     color: var(--alt-bg);
 }
@@ -164,7 +168,7 @@ nav {
 .subtitle {
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
-    color: var(--light);
+    /*color: var(--light);*/
     margin-bottom: 1.2rem;
 }
 
@@ -288,6 +292,34 @@ nav {
     font-size: small;
     padding: 0.4rem;
     text-align: center;
+}
+
+
+/* Featured Part of the Page */
+
+.featured-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-cards {
+    width: 256px;
+    height: 396px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.f-img {
+    width: 256px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.f-txt {
+    height: 96px;
+    padding: 0.3rem 1rem;
 }
 
 @media (max-width: 900px) {
